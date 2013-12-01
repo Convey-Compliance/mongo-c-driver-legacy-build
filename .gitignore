@@ -16,3 +16,8 @@
 *.exe
 *.out
 *.app
+/*.opensdf
+/*.sdf
+/bin/
+/intermediate/
+/ipch/
