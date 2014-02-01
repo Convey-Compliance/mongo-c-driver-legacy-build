@@ -6,15 +6,15 @@
 
 @SET PATH=%FrameworkDir%%FrameworkVersion%;%FrameworkSDKDir%;%PATH%
 
-msbuild ..\src\MongoC.sln "/p:Platform=Win32;Configuration=Debug"
+msbuild ..\MongoC.sln "/p:Platform=Win32;Configuration=Debug"
 IF ERRORLEVEl 1 EXIT
 
-msbuild ..\src\MongoC.sln "/p:Platform=Win32;Configuration=Release"
+msbuild ..\MongoC.sln "/p:Platform=Win32;Configuration=Release"
 IF ERRORLEVEl 1 EXIT
 
-msbuild ..\src\MongoC.sln "/p:Platform=x64;Configuration=Debug"
+msbuild ..\MongoC.sln "/p:Platform=x64;Configuration=Debug"
 IF ERRORLEVEl 1 EXIT
 
-msbuild ..\src\MongoC.sln "/p:Platform=x64;Configuration=Release"
+msbuild ..\MongoC.sln "/p:Platform=x64;Configuration=Release"
 IF ERRORLEVEl 1 EXIT
 
