@@ -21,6 +21,7 @@ if %%6 == "" (
 powershell -Command "& {(Get-Content ..\__submodules\mongo-c-driver\src\mongoc.vcxproj) -replace '%1-%2-%3', '%4-%5-%6' | Set-Content ..\__submodules\mongo-c-driver\src\mongoc.vcxproj}"
 powershell -Command "& {(Get-Content ..\__submodules\mongo-c-driver\src\mongoc.rc) -replace '%1,%2,%3,', '%4,%5,%6,' | Set-Content ..\__submodules\mongo-c-driver\src\mongoc.rc}"
 powershell -Command "& {(Get-Content ..\__submodules\mongo-c-driver\src\mongoc.rc) -replace '%1.%2.%3.', '%4.%5.%6.' | Set-Content ..\__submodules\mongo-c-driver\src\mongoc.rc}"
+powershell -Command "& {(Get-Content sign.cmd) -replace '%1.%2.%3.', '%4.%5.%6.' | Set-Content sign.cmd}"
 
 goto :end
 
