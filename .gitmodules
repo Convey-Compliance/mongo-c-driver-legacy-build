@@ -1,6 +1,3 @@
-[submodule "__submodules/mongo-c-driver"]
-	path = __submodules/mongo-c-driver
-	url = git@github.com:Convey-Compliance/mongo-c-driver.git
 [submodule "__submodules/zlib"]
 	path = __submodules/zlib
 	url = git@github.com:Convey-Compliance/zlib.git
